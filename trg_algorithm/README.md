@@ -1,13 +1,10 @@
 ## Tensor Renormalization Group Algorithm
 
-**Mentors:** Peter Majcen, Nora Reinić
-
-### Overview
-
 Renormalization group is a theoretical framework developed to understand the properties of many-body systems in thermodynamic limit. The main idea relies on the assumption that many-body systems at large scales show universal behaviour driven by the collective phenomena, rather than the individual interactions between the constituents. Thus, the aim is to identify and analyise these universal properties which remain unchanged regardless of the scale of the observation.
 
-The mechanism on which the renormalization group analysis is based is coarse-graining the lattice: we gradually map a system of large number of particles into the one of a smaller number of particles, while retaining the a part of information about the bigger system. In this challenge, we focus on is a family of implementations of the renormalization group idea based on the tensor network techniques, and in particular, implementing the Tensor Renormalization Group (TRG) algorithm \cite{Levin2007} for the 2D classical Ising model.
+The mechanism on which the renormalization group analysis is based is coarse-graining the lattice: we gradually map a system of large number of particles into the one of a smaller number of particles, while retaining the a part of information about the bigger system. In this challenge, we focus on is a family of implementations of the renormalization group idea based on the tensor network techniques, and in particular, implementing the Tensor Renormalization Group (TRG) algorithm for the 2D classical Ising model.
 
+**Mentors:** Peter Majcen, Nora Reinić
 
 ### Tasks
 
