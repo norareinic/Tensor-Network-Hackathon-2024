@@ -6,9 +6,9 @@ However, the short lifetime ($\approx$ ns) and diffusive transport of singlet ex
 
 In this project we will implement a numerical model to study the initial event of singlet fission in extended solids, which remains a challenge in the field. We will begin by considering a simplified model that can be solved analytically and numerically on a small lattice (2 to 10 sites). We will then study the model using symmetric tensor networks (TNs). After comparing the TN results with known solutions, we will scale up the model to consider larger lattices, disorder, and the effect of the vibrational modes of the lattice.
 
-![](SpinS_problem_ste_figure.png)
+![title](SpinS_problem_ste_figure.png)
 
-**Scientific mentor:** Francesco Campaioli
+**Scientific mentor:** Francesco Campaioli\
 **Code mentor:** Alice Pagano
 
 ### Tasks
