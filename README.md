@@ -9,6 +9,7 @@ Topics
 2. Tensor network machine learning ([here](tn_machine_learning))
 3. Tensor Renormalization Group Algorithm ([here](trg_algorithm))
 4. Parallel scaling of tensor networks ([here](tn_parallel_scaling))
+5. Optimization with Tensor Networks: the Knapsack Problem ([here](tn_knapsack_optimization))
 
 You can find the materials for every topic inside the corresponding folder.
 
