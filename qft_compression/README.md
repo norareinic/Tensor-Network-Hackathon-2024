@@ -1,4 +1,4 @@
-## Tensor Renormalization Group Algorithm
+## Data compression with quantum Fourier transform
 
 The Fourier Transform is the cornerstone of frequency analysis and the fundamental step in many signal processing algorithms, from noise cancelling to audio and image compression. By working in the Fourier space, we can optimally approximate an input signal, for example, by cutting the frequencies that are not visible/audible by a human. This is the basic principle behind lossy image (JPEG) and audio (MPEG) compression, which gave us the ubiquitous *jpg* and *mp3* codecs that we are so familiar with.
 
