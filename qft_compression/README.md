@@ -16,6 +16,8 @@ While a speedup is not guaranteed when running the QFT on a classical machine, a
 - Modify the application of the FFT in the JPEG algorithm with a QFT.
 - Apply the algorithm to different images and different scales. Compare the computational
   time and the scaling for the classical FFT and the QFT.
+- [OPTIONAL] Repeat the analysis for the approximate QFT, studying the dependency of the results in the
+  approximation factor.
 
 ### Materials
 
@@ -27,3 +29,6 @@ While a speedup is not guaranteed when running the QFT on a classical machine, a
 [3] You can find in the folder an example [image to compress and its compressed version](image_compression.png)
 
 [4] We prepared a [python script](image_handling.py) to read/write an image.
+
+[5] We prepared a [qmatchatea example](qmatchatea_example.py) to show how to run a quantum circuit using qmatchatea
+    and to retrieve the resulting state, both in tensor network and statevector form.
