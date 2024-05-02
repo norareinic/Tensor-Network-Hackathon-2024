@@ -10,12 +10,15 @@ In this project, we propose an Ising formulation of the Camera Placement Problem
 
 ### Tasks
 
-- Understand how to write the partition function of a many-body Ising spin model in 2D as a tensor network
-- Implement the TRG algorithm to compute the system's Helmholtz free energy per site
-- Determine the critical temperature of the system
-- Compare the results with the exact solution and analyse the algorithm's performance in the different Hamiltonian parameter and convergence parameter regimes
-- **Optional**: investigate how to compute the system's magnetization
-- **Optional**: explore the possible improvements of the TRG algorithm
+- Solve a small-scale problem instance using exact methods, such as brute-force search or *state-of-the-art* solvers, as a benchmark
+- Translation to a TN-based ground state search using variational ground-state search and imaginary-time evolution 
+- Implementation and validation of the code w.r.t. the benchmark
+- Evaluation of selected performance metrics, including (but not limited to):
+  - Convergence of the algorithmic hyper-parameters (variational steps, temperature, number of steps...)
+  - Estimation of the time-to-solution (TTS) *vs* the number of sites (qubits) $N$
+  - Comparison of the solution quality attainable with TNs for the constrained and unconstrained problems
+- **Optional**: comparison of the TN performances with those obtained with commercial solvers (f.i. GUROBI, CPLEX...)
+
 
 ### Materials
 
