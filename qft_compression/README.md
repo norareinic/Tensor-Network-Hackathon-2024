@@ -7,6 +7,8 @@ The best available (classical) implementation of the Fourier transform is the *F
 In this project we will tackle the compression of images using the standard JPEG compression codec. First, we will use the classical FFT algorithm and then, we will implement the QFT algorithm using matrix product operators on *qmatchatea*.
 While a speedup is not guaranteed when running the QFT on a classical machine, an advantage is achievable when processing sufficiently large signals, or by running the algorithm on a real quantum device.
 
+<img src="qft_compression.png" alt="drawing" width="70%"/>
+
 **Mentors:** Francesco Campaioli, Marco Ballarin
 
 ### Tasks
