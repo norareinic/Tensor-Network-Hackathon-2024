@@ -32,3 +32,5 @@ While a speedup is not guaranteed when running the QFT on a classical machine, a
 
 [5] We prepared a [qmatchatea example](qmatchatea_example.py) to show how to run a quantum circuit using qmatchatea
     and to retrieve the resulting state, both in tensor network and statevector form.
+
+[6] We provided [data](./data/) of raw lossless images that can be used to test the compression method. The images are taken from the following [dataset](https://www.kaggle.com/datasets/saeedehkamjoo/standard-test-images).
