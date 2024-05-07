@@ -13,7 +13,7 @@ In this project we will implement a numerical model to study singlet fission in 
 
 ### Tasks
 
-- Following the notes on singlet fission, use [qtealeaves](https://pypi.org/project/qtealeaves/) to implement the singlet fission Hamiltonian for 1D rings with $N$ sites (nearest-neighbour couplings and periodic boundary conditions). Ignore the vibrational modes so that each site represents an exciton site. 
+- Following the [notes](./notes.pdf) on singlet fission, use [qtealeaves](https://pypi.org/project/qtealeaves/) to implement the singlet fission Hamiltonian for 1D rings with $N$ sites (nearest-neighbour couplings and periodic boundary conditions). Ignore the vibrational modes so that each site represents an exciton site. 
 
 - Study the unitary dynamics of an initial singlet exciton state. Consider the parameters of the *resonant triplet-pair solution* with singlet exciton energy $\varepsilon_S = 1$ (see notes) and initialise the system in the ground state of the singlet exciton Hamiltonian with $n_0 = 1$ singlet in the medium. Propagate this initial state via a quench monitoring the total number of singlets and triplets, and compare the results with the solution provided in the jupyter notebook for $N = 4$. 
 
