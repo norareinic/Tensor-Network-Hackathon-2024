@@ -30,5 +30,5 @@ In this project we will implement a numerical model to study singlet fission in 
 
 - [Notes](./notes.pdf) on the theoretical formulation of singlet fission in many-body systems.
 - A [jupyter notebook](./analytic_solution.ipynb) with the QuTiP implementation of the *resonant triplet-pair solution*, which can be used to compare the TTN results with an exact solution.
-- [Code snippet](./disorder.py) to generate different random local and two-body terms over multiplet trajectories.
-- [Code snippet](./embedding) to implement an exciton-phonon site embedding.
+- [disorder.py](./disorder.py): Code snippet to **generate disorder** for local and two-body terms over multiplet trajectories.
+- [embedding.py](./embedding.py): Code snippet to implement an **exciton-phonon site embedding**.
