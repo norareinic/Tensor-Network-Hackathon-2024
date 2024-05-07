@@ -9,7 +9,8 @@ While a speedup is not guaranteed when running the QFT on a classical machine, a
 
 <img src="qft_compression.png" alt="drawing" width="70%"/>
 
-**Mentors:** Francesco Campaioli, Marco Ballarin
+**Scientific Mentors:** Francesco Campaioli, Marco Ballarin
+**Code Mentor:** Marco Ballarin
 
 ### Tasks
 
