@@ -27,3 +27,7 @@ In this project, we propose an Ising formulation of the Camera Placement Problem
 [2] Jupyter notebook for the problem generation (i.e. the Hamiltonian)
 
 [3] Example of how to use [qtealeaves](https://baltig.infn.it/quantum_tea_leaves/py_api_quantum_tea_leaves) to perform a [ground state search or an imaginary time evolution](spinglass_example.py) with spin-glass problems;
+
+### Dependencies
+
+In addition to qtealeaves, the `pandas` package is required to run the examples.
