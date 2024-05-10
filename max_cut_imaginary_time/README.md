@@ -6,12 +6,14 @@ QUBO problems pose a significant challenge in optimization, falling under the ca
 
 ### Tasks
 
+- Generate random instances of the MaxCut problem, with different connectivity and topology.
 - Map a MaxCut problem to a QUBO problem and solve it with a brute-force algorithm.
 - Solve a MaxCut problem with imaginary time evolution (exact simulation).
-- Solve a large MaxCut by simulating imaginary time evolution with TN. Which class of graphs is more suitable for the TN ansatz?
-- Investigate how the capability of finding low energy states depends on the bond dimension and the features of the MaxCut graph (e.g., average connectivity and topology).
-- Use OPES sampling for studying how the energy distribution evolves during the process.
-- Compare the performances of imaginary-time evolution and variational GS search.
+- Solve a large MaxCut by simulating imaginary time evolution with TN.
+- Investigate how the capability of finding low energy states depends on the features of the MaxCut graph (e.g., average connectivity and topology). Which class of graphs is more suitable for the TN ansatz?
+- Investigate how the capability of finding low energy states depends on the bond dimension and on the number of steps in the time evolution.
+- (Optional) Use OPES sampling for studying how the energy distribution evolves during the process.
+- (Optional) Compare the performances of imaginary-time evolution and variational GS search.
 
 
 ### Materials
