@@ -6,12 +6,14 @@ QUBO problems pose a significant challenge in optimization, falling under the ca
 
 ### Tasks
 
+- Generate random instances of the MaxCut problem, with different connectivity and topology.
 - Map a max-cut problem to a QUBO problem and solve it with a brute-force algorithm.
 - Map a QUBO problem to ground state search and solve with quantum annealing (exact simulation).
-- Map a larger QUBO problem to ground state search and solve by simulating quantum annealing with TN.  Which class of graphs is more suitable for the TN ansatz?
-- Investigate how the capability of finding low energy states depends on the bond dimension, the annealing time and, the number of steps in the TDVP evolution, and the features of the MaxCut graph (e.g., average connectivity and topology).
-- Use OPES sampling for studying how the energy distribution evolves during the process.
-- Compare the performances of quantum annealing and variational GS search.
+- Map a larger QUBO problem to ground state search and solve by simulating quantum annealing with TN.
+- Investigate how the capability of finding low energy states depends on the features of the MaxCut graph (e.g., average connectivity and topology). Which class of graphs is more suitable for the TN ansatz?
+- Investigate how the capability of finding low energy states depends on the bond dimension, the annealing time, and the number of steps in the TDVP evolution.
+- (Optional) Use OPES sampling for studying how the energy distribution evolves during the process.
+- (Optional) Compare the performances of quantum annealing and variational GS search.
 
 
 
