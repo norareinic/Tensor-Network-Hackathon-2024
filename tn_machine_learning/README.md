@@ -7,7 +7,7 @@ Tensor network algorithms extend beyond quantum many-body physics and find appli
 In this project, you will analyze the performances of a matrix product state (MPS)
 ansatz to classify the MNIST dataset. You will use the MPS class in `quantum_tea_leaves`, and specifically, employ the optimization algorithm from Ref. [1]. The idea of the algorithm is sketched below. A feature map $`\Phi(x)`$ is applied to the input data. Then, the decision function is constructed and the weights are optimized via a sweeping algorithm similar to DMRG.
 
-![mps_lego](mps_lego.png){width="36px"}
+![mps_lego](mps_lego.png){width="250px"}
 
 **Tasks:**
 
