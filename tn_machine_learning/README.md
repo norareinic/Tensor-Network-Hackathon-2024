@@ -7,11 +7,11 @@ Tensor network algorithms extend beyond quantum many-body physics and find appli
 In this project, you will analyze the performances of a matrix product state (MPS)
 ansatz to classify the MNIST dataset. You will use the MPS class in `quantum_tea_leaves`, and specifically, employ the optimization algorithm from Ref. [1]. The idea of the algorithm is sketched below. A feature map $`\Phi(x)`$ is applied to the input data. Then, the decision function is constructed and the weights are optimized via a sweeping algorithm similar to DMRG.
 
-![mps_lego](mps_lego.png)
+![mps_lego](mps_lego.png){width="36px"}
 
 **Tasks:**
 
-1. Successfully classify the digits `3` and `8` of the MNIST dataset using the MPS
+1. Successfully classify the digits $`3`$ and $`8`$ of the MNIST dataset using the MPS
 classifier. Encode the dataset mapping each pixel in
 a qubit with state:
 ```math
@@ -20,13 +20,13 @@ a qubit with state:
 where $`|p_i|^2`$ is the (normalized) intensity of the pixel. We call this method MPS1.
 What are the performances?
 
-2. Successfully classify the digits `3` and `8` of the MNIST dataset using the MPS classifier. Encode the dataset in a statevector form, such as:
+2. Successfully classify the digits $`3`$ and $`8`$ of the MNIST dataset using the MPS classifier. Encode the dataset in a statevector form, such as:
 ```math
     |\psi\rangle = \sum_i p_i \ket{i},
 ```
 where $`|p_i|^2`$ is the (normalized) intensity of the pixel. We call this method MPS2. What are the performances?
 
-3. By analyzing the entanglement entropy of the MPS classifier, are you able to understand which are the important characteristics of your system? Which of the two encodings is better for explainabilities? Does it become easier if you instead try to classify `0` and `1`? How does the entanglement entropy and the accuracy vary with the bond dimension?
+3. By analyzing the entanglement entropy of the MPS classifier, are you able to understand which are the important characteristics of your system? Which of the two encodings is better for explainabilities? Does it become easier if you instead try to classify $`0`$ and $`1`$? How does the entanglement entropy and the accuracy vary with the bond dimension?
 
 4. **[Optional]** Solve the same problem with your favorite neural network. Following Ref. [2] compress the weights of the neural network. Which method is better memory-wise? MPS1, MPS2, NN, or MPS-compressed NN?
 
