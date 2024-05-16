@@ -30,7 +30,7 @@ example is:
 
 .. codeblock::
 
-    mpiexec -n 4 python3 mpi_example.py
+    mpiexec -n 2 python3 mpi_mps.py
 
 where the ``-n`` parameters indicates the number of processes you use.
 """
@@ -39,7 +39,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import qtealeaves.observables as obs
 from qmatchatea import QCConvergenceParameters, QCBackend, run_simulation
-from qmatchatea.utils import print_state
+from qmatchatea.utils import MPISettings
 from qiskit import QuantumCircuit
 from qtealeaves.emulator import MPS
 
@@ -126,8 +126,24 @@ def main():
     conv_params = QCConvergenceParameters(
         max_bond_dimension=2 ** (num_qubits // 2), trunc_tracking_mode="C"
     )
+
+    ###############################################################################
+    # We set `num_procs=1` because the `num_procs` is a fortran-only parameter. The
+    # number of processes for this script is set when the program is launched.
+    # The MPI approach is set to "CT", where the MPS is diveded among different
+    # processes. I.e., if we have 4 qubits and 2 processes, the first process
+    # will handle qubits 0,1 and the second 2, 3. Communications will happen when
+    # operations are done on qubit 1, 2.
+    # The approach "SR" is instead a normal serial application of the algorithm
+
+    # The most important part for you is here, in the isometrization parameter.
+    # A negative isometrization is equivalent to a serial step.
+    # A positive isometrization is equivalent to a parallel step with n layers
+    # A list is accessed with periodic boundary condition for the different isometrization
+    # steps
+    mpi_settings = MPISettings(mpi_approach="CT", isometrization=-1, num_procs=1)
     backend = QCBackend(
-        backend="PY", precision="Z", device="cpu", num_procs=1, mpi_approach="CT"
+        backend="PY", precision="Z", device="cpu", mpi_settings=mpi_settings
     )
 
     results = run_simulation(
@@ -135,7 +151,7 @@ def main():
         convergence_parameters=conv_params,
         observables=observables,
         backend=backend,
-        where_barriers=3,  # THIS IS WHAT YOU HAVE TO MODIFY FOR TASK 2
+        where_barriers=3,  # we apply a reisometrization every 3 layers
     )
 
     # Print results only if we are on rank 0
@@ -144,8 +160,9 @@ def main():
         print(f"Time spent for parallel simulation: {results.computational_time}s")
 
         # We also run the simulation serially to compare the results
+        mpi_settings = MPISettings(mpi_approach="SR", isometrization=-1, num_procs=1)
         backend = QCBackend(
-            backend="PY", precision="Z", device="cpu", num_procs=1, mpi_approach="SR"
+            backend="PY", precision="Z", device="cpu", mpi_settings=mpi_settings
         )
 
         observables = obs.TNObservables()
