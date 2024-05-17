@@ -13,7 +13,7 @@ Topics
 6. Solving MaxCut with simulated quantum annealing ([here](max_cut_quantum_annealing))
 7. Data compression with quantum Fourier transform ([here](qft_compression))
 8. Optimization with tensor networks – The Knapsack Problem ([here](tn_knapsack_optimization))
-9. Optimizing Camera Placement for Emergency Prevention and Response([here](camera_placement))
+9. Optimizing Camera Placement for Emergency Prevention and Response ([here](camera_placement))
 
 You can find the materials for every topic inside the corresponding folder.
 
