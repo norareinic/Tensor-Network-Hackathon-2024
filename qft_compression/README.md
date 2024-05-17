@@ -24,7 +24,7 @@ While a speedup is not guaranteed when running the QFT on a classical machine, a
 
 ### Materials
 
-[1] The latest version (1.0.1) of quantum matcha TEA can be installed with `pip install qmatchatea` or directly downloaded from
+[1] The latest version (1.1.x) of quantum matcha TEA can be installed with `pip install qmatchatea` or directly downloaded from
     the [gitlab repository](https://baltig.infn.it/quantum_matcha_tea/py_api_quantum_matcha_tea).
 
 [2] Qiskit tutorial for the [QFT](https://medium.com/@_monitsharma/learn-quantum-computing-with-qiskit-quantum-fourier-transform-e27176c8f378).
