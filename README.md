@@ -20,6 +20,8 @@ You can find the materials for every topic inside the corresponding folder.
 General information
 ===================
 
+[Here](general_materials) find the materials for Quantum TEA Leaves introduction.
+
 * If you install python packages locally on your machine, we recommend using a
   pip environment, which can isolate the installed packages for an application.
 * When Quantum TEA packages are used, the examples in the folders are designed
