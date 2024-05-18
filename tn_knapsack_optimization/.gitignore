@@ -2,5 +2,7 @@
 __pycache__/
 
 ## Files
+../.DS_Store
+.DS_Store
 knapsack.py
 knapsack_solvers.py
