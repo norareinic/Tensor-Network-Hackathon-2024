@@ -1,0 +1,8 @@
+numpy==1.24.4
+scipy==1.10.1
+qiskit==0.45.0
+networkx==3.1
+qiskit-aer==0.13.1
+qiskit[visualization]
+qiskit-optimization==0.6.0
+qiskit-optimization[cplex]
