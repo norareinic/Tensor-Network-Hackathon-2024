@@ -6,3 +6,7 @@ __pycache__/
 .DS_Store
 knapsack.py
 knapsack_solvers.py
+
+# Custom 
+# python environment
+env
