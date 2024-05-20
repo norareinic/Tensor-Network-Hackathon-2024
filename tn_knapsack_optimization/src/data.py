@@ -34,6 +34,8 @@ def load(dataset : Literal['small', 'medium', 'large'] = 'small', path : str = '
         C, profits, weights = read(file)
         set.append({})
         set[-1]['C'] = C
+        assert len(weights) == len(profits)
+        set[-1]['n'] = len(weights)
         set[-1]['weights'] = list(weights)
         set[-1]['profits'] = list(profits)
         
